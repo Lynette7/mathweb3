@@ -17,7 +17,7 @@ fn main() {
         } else {
             let mut b = num1;
             let mut a = num2;
-
+ 
             while a % b != 0 {
                 let temp = a;
                 a = b;
@@ -27,6 +27,8 @@ fn main() {
         }
     }
 
-    let result = gcd(816, 816);
-    println!("GCD of 0 and 4115 is: {}", result);
+    let a = 816;
+    let b = 4115;
+    let result = gcd(a, b);
+    println!("GCD of {a} and {b} is: {}", result);
 }
