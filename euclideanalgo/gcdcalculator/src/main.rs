@@ -4,6 +4,7 @@ fn main() {
             return num2;
         } else if num2 == 0 {
             return num1;
+            //a = b.x + r
         } else if num1 > num2 {
             let mut a = num1;
             let mut b = num2;
@@ -27,8 +28,8 @@ fn main() {
         }
     }
 
-    let a = 816;
-    let b = 4115;
+    let a = 60;
+    let b = 33;
     let result = gcd(a, b);
     println!("GCD of {a} and {b} is: {}", result);
 }

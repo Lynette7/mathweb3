@@ -2,6 +2,7 @@ fn main() {
     fn extendedeuclidean(mut a: i32, mut b: i32) -> (i32, i32, i32) {
         // q is the quotient and r is the remainder
         //The other variables are used to store and track the values of the previous iteration
+        // a = b.q + r
         let mut q = 0;
         let mut r = 1;
         let mut x1 = 1;

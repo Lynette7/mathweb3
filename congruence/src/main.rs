@@ -4,7 +4,7 @@ fn main() {
         c = c % m;
         // let u = 0;
         // let v = 0;
-        let (d, u, v) = extendedeuclidean(a, m);
+        let (d, u, _v) = extendedeuclidean(a, m);
         if c % d == 0 {
             let x0 = (u * (c / d)) % m;
             if x0 < 0 {
@@ -19,20 +19,20 @@ fn main() {
 
     fn extendedeuclidean(mut a: i32, mut b: i32) -> (i32, i32, i32) {
         // The extended Euclidean algorithm will be used to find the gcd of a and m
-        let mut q = 0;
+        // let mut q = 0;
         let mut r = 1;
         let mut x1 = 1;
         let mut x2 = 0;
-        let mut x3 = 1;
+        // let mut x3 = 1;
         let mut y1 = 0;
         let mut y2 = 1;
-        let mut y3 = 0;
+        // let mut y3 = 0;
 
         while r != 0 && b > 0{
-            q = a / b;
+            let q = a / b;
             r = a % b;
-            x3 = x1 - q * x2;
-            y3 = y1 - q * y2;
+            let x3 = x1 - q * x2;
+            let y3 = y1 - q * y2;
 
             if r != 0 {
                 a = b;
